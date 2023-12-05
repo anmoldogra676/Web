@@ -1,0 +1,27 @@
+Today session is all about javascript
+
+
+Languages, Compiled & Interpreted Languages
+Single Thread, Multicore --> Multithreaded ( Java, Rust, C++ --> threaded)
+
+Variables declare ---> let , const, var 
+var--> original, 
+let --> es6 
+const --> constant 
+JS --> dynamically language , single threaded
+
+Data Types --> strings, boolean, number 
+Conditional Statements --> if else
+Loops --> For loop , do while, while 
+
+Arrays --> generally in other languages all are of same types but in js there can be of any types
+(mix/combinations)
+Objects --> { key: value}
+
+Functions --> 
+takes argument , return result, 
+take functions as argument also called callback 
+{ chatgpt --> prompt  --> then it makes a request to server/backend
+and call another function to complete this request
+}
+Function --> resusable code 
