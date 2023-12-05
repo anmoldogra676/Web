@@ -1,0 +1,4 @@
+HTML CSS
+HTML --> TAGS input, div, p , a, img
+css --> flex box --> two div to display horizontally
+position and styling purpose --> fontcolor, background, color, 
