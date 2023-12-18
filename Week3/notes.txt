@@ -16,5 +16,17 @@ function userMiddlware((req, res, next)=>{
 })
 app.get('health-checkup',userMiddlware, paramMiddleware , (req, res)=>{ actual logic })
 
+app.use(middleware) --> takes middleware into input means this can be called for every route weitten below so use it 
+app.use(express.json()) --> by this we can use req.body directly in the code beacuse now this middlware is included in all routes and whole code
+
+- **`app.use()`** This method is used to **mount middlewares globally** in the application. They are **executed for every incoming request**. Examples include:
+    1. **`app.use(calculateRequests)` :** An example middleware that performs some calculations or operations for each request.
+    2. **`app.use(express.json());` :** middleware to parse the body of the request.
+
+    at last  ---> app.use(function (err,req, res, next){
+     res.send('Wrong with the server')
+    })
 
 
+authentication is done can be done with help of middlware --> api handle rate limiting 
+Input authentication is also a thing --> 
