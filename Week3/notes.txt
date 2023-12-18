@@ -1,0 +1,20 @@
+middle wares --> precheck (authentication, input validation) before actual logic 
+
+Task 1 --> before making a request to a endpoint take kidney id in query paramter and user name pass in header
+ways to pass data --> body, query param , header 
+
+dumb way --> get route k andr hi username and pass ka likh lo authentication
+
+good way --> middleware --> get route k parameter --> callback functions ( first , second , last)
+last is generally logic , first and second is generally middleware eg case --> authentication for username and password
+and last is queryparamter check for middleware --> sbse phle auth ka dekho woh shi toh dusra paramter ka check
+so 2 middleware ==> switch to next route is next() functions
+function userMiddlware((req, res, next)=>{
+    do check 
+    if all good then called next()
+    otherwise dont do anything 
+})
+app.get('health-checkup',userMiddlware, paramMiddleware , (req, res)=>{ actual logic })
+
+
+

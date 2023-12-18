@@ -1,0 +1,34 @@
+Ecmascript ---> tells us how js should look like ( provides specification for js compiler/engine , please follow all the things )
+
+Javascript ---> scripting language corrsponding to Ecmascript but also provides external things like dom which is important 
+for web development , setTimeout, fs.readFile 
+Most famous js compiler/engine --> chrome v8 (C) , firefox --> spider monkey( c + rust)
+
+Node js --> js is meant for browser. but smart people extract v8 part which is for js and add extra features (read from readFile) 
+and make them suitable for backend ---> names node ( node js is a runtime ---> compiles a js )
+
+Bun --> competiter of Nodejs ( Language ZIG )
+
+Node js --> create cli , create a server , video player, game
+
+HTTP --> protocol how website frontend connects with backend
+frontend and    backend
+(html css js)   (place where request goes --> server --> gives response)
+
+http server --> authentication ( gpt4 ), some code that follows http
+
+http (client side)-->
+protocol --> http , https
+address --> url/ip/port
+route --> different route for different information/query
+headers (authentication part cookie identification ) body ( what u ask/query ) params
+method ( put, get, post)
+
+https://chat.openai.com/backendapi/conversation
+protocol url             route
+
+http ( server )-->
+response header --> used for sign in purpose
+response body  --> get the response back 
+status codes --> signal 404, 200, 403 (authentication issue), 500 ( internal server)
+
