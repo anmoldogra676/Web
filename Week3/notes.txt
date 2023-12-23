@@ -30,3 +30,16 @@ app.use(express.json()) --> by this we can use req.body directly in the code bea
 
 authentication is done can be done with help of middlware --> api handle rate limiting 
 Input authentication is also a thing --> 
+
+
+authentication: 
+
+
+
+
+
+middleware --> express is series of  bunch of middleware calculations
+they have access of req, res, next 
+--> make changes in request , response
+--> calls the next middlware 
+--> execute some code
