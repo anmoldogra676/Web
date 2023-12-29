@@ -1,0 +1,24 @@
+event bubble --> internal then external --> bydefault last paramter false
+event capture --> true kr dein toh extrenla then internal 
+throttle ---> ;limit the number upto which u can do the request 
+debounce --> certain wait k baad bhejenge ( amazon m searh bar pe suggestion aayenge --> user 100 ms k baad bhejenge backend pe 
+request )
+
+
+simple backend frontend application ---> by which we can do everything 
+front end --> two input you add and then u click on the button everything will get updated 
+backend --> make a endpoint for server by which u can add the logic 
+
+
+let timeout;
+function debounce(){
+    cleartimeout(timeout)
+    timeout = setTimeout(function(){
+        main()
+    },100)
+}
+
+
+Front End Frameworks---> 
+Internet --> static and dyanamic --> dynamic ( linekdin posts)
+react --> makes dom manipulation easy 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    async function show(){
+       let h1 = document.createElement('div');
+       h1.innerText='Hey'
+       console.log(h1)
+       document.body.appendChild(h1)
+       let value1 = document.getElementById('value1').value
+       let value2 = document.getElementById('value2').value
+       const request = await fetch(`http://localhost:4000/sumlogic?value1=${value1}&value2=${value2}`)
+       const response = await request.json()
+       console.log(response)
+    }
+</script>
+<body>
+    <input id="value1" type="text" placeholder="Enter value 1"> <br>
+    <input id="value2" type="text" placeholder="Enter value 2"><br>
+    <button onclick={show()} >Click me </button>
+</body>
+</html>
